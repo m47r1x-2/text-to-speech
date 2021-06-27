@@ -93,7 +93,7 @@ install_deps(){
         cd $HOME
         mkdir storage/music/ttsVoice
         cd $HOME
-        cd ttsVoice
+        cd text-to-speech
         
     else
         echo "We could not install dependencies."
