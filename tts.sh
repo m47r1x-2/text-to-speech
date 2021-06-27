@@ -71,7 +71,7 @@ banner() {
         toilet -f mono12 -F border MATRIX
         
     fi
-    echo -e "\e[1;32m For Any Queries Join Me!!!\e[0m"
+    echo -e "\e[1;32m Please subscribe our youtube channel\e[0m"
     
     echo -e "\e[4;32m   YouTube: https://youtube.com/channel/UCUagOLyRyVbreJQR6-Swkvw \e[0m"
     echo " "
@@ -89,6 +89,7 @@ install_deps(){
         apt install mpg123 -y
         pip install gTTS 
         apt update && apt upgrade -y
+        pkg install python
         cd $HOME
         mkdir storage/music/ttsVoice
         cd $HOME
@@ -97,7 +98,7 @@ install_deps(){
     else
         echo "We could not install dependencies."
         echo "Please make sure you have git, python3, pip3 and requirements installed."
-        echo "Then you can execute bomber.py ."
+        echo "Then you can execute tts.sh ."
         exit
     fi
 }
