@@ -65,7 +65,7 @@ banner() {
         figlet Text2Voice
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Modify By \e[1;32mMATRIX \e[0m"
+        echo -e "\e[4;34m This Tool Was Created By \e[1;32mMATRIX \e[0m"
     else
         echo -e "\e[1;33mCreated By \e[1;32m"
         toilet -f mono12 -F border MATRIX
