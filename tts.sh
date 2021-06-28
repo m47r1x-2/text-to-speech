@@ -92,7 +92,7 @@ install_deps(){
         pkg install python
         cd $HOME
         
-        mkdir storage/emulated/0/music/ttsVoice
+        mkdir storage/music/ttsVoice
         cd $HOME
         cd text-to-speech
         
