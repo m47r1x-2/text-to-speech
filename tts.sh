@@ -91,7 +91,7 @@ install_deps(){
         apt update && apt upgrade -y
         pkg install python
         cd $HOME
-        mkdir storage/emulated/0/music
+        
         mkdir storage/emulated/0/music/ttsVoice
         cd $HOME
         cd text-to-speech
