@@ -10,7 +10,7 @@ file = mytext.replace(" ", "_")
 
 
 
-language = input("\tSelext language(en/ml) : ")
+language = input("\tSelect language(en/ml) : ")
 
  
 
