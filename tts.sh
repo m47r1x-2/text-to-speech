@@ -132,6 +132,7 @@ while [ $opt -ne 0 ]
 do
 
      clear
+     banner
      python text_to_voice.py
      
      cp *.mp3 ~/storage/music/ttsVoice/
