@@ -9,7 +9,7 @@ apt update && apt upgrade
 
 rm -rf text-to-speech
 
-git clone https://github.com/m47r1x-2/text-to-speech.git
+git clone https://github.com/m
 
 cd text-to-speech
 
