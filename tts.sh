@@ -23,7 +23,7 @@ detect_distro() {
 
 
 pause() {
-    echo -e "\033[1m \033[91m  Press CTRL + z to Stop \033[0m "
+    
     read -n1 -r -p "Press any key to continue..." key
 }
 
@@ -91,6 +91,7 @@ install_deps(){
         apt update && apt upgrade -y
         pkg install python
         cd $HOME
+        mkdir storage/music
         mkdir storage/music/ttsVoice
         cd $HOME
         cd text-to-speech
@@ -120,12 +121,17 @@ else
     install_deps
     echo This Script Was Made By MATRIX > .update
     echo 'Requirements Installed....'
+    clear
     pause
 fi
 
+opt=1
 
+while [ $opt -ne 0 ]
 
+do
 
+     clear
      python text_to_voice.py
      
      cp *.mp3 ~/storage/music/ttsVoice/
@@ -133,9 +139,19 @@ fi
 
      sleep 2
      
-     pause
-     bash tts.sh
+    
      
-     
-     
-   
+     echo -e "\033[92m \033[1m \tEnter any number to continue \033[35m OR  \033[91m 0  to exit \033[0m "
+      
+      echo -e "\033[36m"
+      echo -e -n "\t\t\t"
+      
+      read;
+      opt=${REPLY}
+      
+      echo -e "\033[0m"
+  
+  
+done
+
+
